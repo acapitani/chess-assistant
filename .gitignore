@@ -130,13 +130,12 @@ ENV/
 # model file
 chesspiece-detection-model.pt
 
+# train and eval folders
+datasets/*/
+runs/
+
 # temporary/debug files
-mic.wav
-out.wav
-out.mp3
-cam.png
-cap.png
-audio/
+
 
 # Spyder project settings
 .spyderproject
