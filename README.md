@@ -66,4 +66,7 @@ Il modello per l'Object Detection dei pezzi è già incluso nel repository con i
 ![Risultati dell'addestramento](assets/training_results.png)
 È comunque possibile eseguire l'addestramento da zero utilizzando il file `train.py` e il dataset disponibile al seguente link:
 
+## Demo
+In questo breve video viene illustrato il funzionamento dell'applicazione: [https://youtu.be/WZLR9H4znxg](https://youtu.be/WZLR9H4znxg)
+
 ## Licenza
