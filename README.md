@@ -61,6 +61,17 @@ Inserire all'interno del file keys.env la chiave API di OpenAI o di Gemini segue
 (In presenza di entrambe le chiavi verrà data priorità a quella di OpenAI)
 5. Esegui lo script `main.py` per avviare l'applicazione.
 
+## Download modello
+
+TODO
+
+## Download dataset
+```bash
+mkdir -p /datasets && \
+wget https://huggingface.co/datasets/acapitani/chesspiece-detection-yolo/resolve/main/dataset.tar.gz -O /datasets/dataset.tar.gz && \
+tar -xzf /datasets/dataset.tar.gz -C /datasets
+```
+
 ## Training
 Il modello per l'Object Detection dei pezzi è già incluso nel repository con il nome `modello.pt`, ed è stato addestrato ottenendo i seguenti risultati:
 ![Risultati dell'addestramento](assets/training_results.png)
