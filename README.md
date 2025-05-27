@@ -62,8 +62,9 @@ Inserire all'interno del file keys.env la chiave API di OpenAI o di Gemini segue
 5. Esegui lo script `main.py` per avviare l'applicazione.
 
 ## Download modello
-
-TODO
+```bash
+wget https://huggingface.co/acapitani/chesspiece-detection-yolo/resolve/main/chesspiece-detection-model.pt -O ./chesspiece-detection-model.pt
+```
 
 ## Download dataset
 ```bash
@@ -81,3 +82,4 @@ Il modello per l'Object Detection dei pezzi è già incluso nel repository con i
 In questo breve video viene illustrato il funzionamento dell'applicazione: [![Guarda il video](assets/chess-assistant-ai.png)](https://youtu.be/WZLR9H4znxg)
 
 ## Licenza
+This software is licensed under GPL v3.0
