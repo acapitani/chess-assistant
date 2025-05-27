@@ -1,6 +1,6 @@
 # Chess Assistant AI
 Chess Assistant AI è un'applicazione sviluppata in Python che integra tecniche di [computer vision](https://en.wikipedia.org/wiki/Computer_vision#:~:text=11%20External%20links-,Definition,human%20visual%20system%20can%20do.), un [LLM](https://en.wikipedia.org/wiki/Large_language_model) come ChatGPT o Gemini (a seconda della scelta dell'utente) e il motore scacchistico [Stockfish](https://github.com/official-stockfish/Stockfish), offrendo un'esperienza interattiva che aiuta gli appassionati di scacchi a comprendere meglio le mosse giocate durante una partita.
-![Chess Assistant AI](screenshots/chess-assistant-ai.png)
+![Chess Assistant AI](assets/chess-assistant-ai.png)
 
 ## Descrizione
 L'applicazione utilizza [YOLOv10](https://docs.ultralytics.com/models/yolov10/) per il riconoscimento dei pezzi in tempo reale su una scacchiera fisica. Durante l'esecuzione, vengono visualizzate le bounding box attorno ai pezzi rilevati (complete di etichettatura con la rispettiva [classe del pezzo](#classi-associate-ai-pezzi)). Il sistema identifica le quattro torri nella posizione di partenza per determinare gli angoli della scacchiera e applica una trasformazione omografica per convertire la vista prospettica in una mappa 2D, utile a stabilire la posizione precisa di ciascun pezzo su una griglia virtuale.
@@ -25,18 +25,18 @@ L'applicazione integra:
 ## Funzionalità
 - Ogni 4 secondi la posizione viene aggiornata
 - Tasto con l'icona di Stockfish per ottenere nella chat in basso le 5 mosse migliori di Stockfish con la loro rispettiva valutazione
-![5 mosse migliori di Stockfish](screenshots/stockfish_best_moves.png)
+![5 mosse migliori di Stockfish](assets/stockfish_best_moves.png)
 - Tasto per riallineare la scacchiera, utile nel caso in cui la telecamera o la scacchiera siano state spostate. È fondamentale che le torri si trovino nei 4 angoli durante l'operazione di riallineamento
 - Checkbox per attivare/disattivare il riconoscimento dei pezzi in real time
 - Tasto con l'icona di una lente di ingrandimento, per riconoscere la posizione sulla scacchiera (nel caso in cui il riconoscimento real time sia disattivato)
-![Detection istantanea](screenshots/instant_detection.png)
+![Detection istantanea](assets/instant_detection.png)
 - Checkbox per attivare/disattivare la visualizzazione delle bounding box attorno ai pezzi riconosciuti
 - Tasto per cambiare il turno del giocatore che deve muovere
-![Cambio del turno](screenshots/change_turn.png)
+![Cambio del turno](assets/change_turn.png)
 - Possibilità di interrogare ChatGPT o Gemini (in base alla chiave API configurata) per ottenere la valutazione della posizione e consigli generali
-![Domande all'assistente](screenshots/assistant_general_question.png)
+![Domande all'assistente](assets/assistant_general_question.png)
 - Possibilità di chiedere a ChatGPT la valutazione di una mossa fornita dall'utente (la mossa deve essere fornita in formato UCI, ad esempio e2e4, g8f6...)
-![Domande all'assistente](screenshots/assistant_specific_move.png)
+![Domande all'assistente](assets/assistant_specific_move.png)
 
 ## Requisiti
 - Telecamera che riprenda la scacchiera
@@ -63,5 +63,7 @@ Inserire all'interno del file keys.env la chiave API di OpenAI o di Gemini segue
 
 ## Training
 Il modello per l'Object Detection dei pezzi è già incluso nel repository con il nome `modello.pt`, ed è stato addestrato ottenendo i seguenti risultati:
-![Risultati dell'addestramento](screenshots/training_results.png)
+![Risultati dell'addestramento](assets/training_results.png)
 È comunque possibile eseguire l'addestramento da zero utilizzando il file `train.py` e il dataset disponibile al seguente link:
+
+## Licenza
