@@ -68,6 +68,7 @@ wget https://huggingface.co/acapitani/chesspiece-detection-yolo/resolve/main/che
 ```
 
 ## Download dataset
+Facolatativo (si può scaricare direttamente il modello già addestrato)
 ```bash
 mkdir -p /datasets && \
 wget https://huggingface.co/datasets/acapitani/chesspiece-detection-yolo/resolve/main/dataset.tar.gz -O /datasets/dataset.tar.gz && \
