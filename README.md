@@ -67,6 +67,6 @@ Il modello per l'Object Detection dei pezzi è già incluso nel repository con i
 È comunque possibile eseguire l'addestramento da zero utilizzando il file `train.py` e il dataset disponibile al seguente link:
 
 ## Demo
-In questo breve video viene illustrato il funzionamento dell'applicazione: [https://youtu.be/WZLR9H4znxg](https://youtu.be/WZLR9H4znxg)
+In questo breve video viene illustrato il funzionamento dell'applicazione: [![Guarda il video](assets/chess-assistant-ai.png)](https://youtu.be/WZLR9H4znxg)
 
 ## Licenza
