@@ -41,8 +41,8 @@ L'applicazione integra:
 ## Requisiti
 - Telecamera che riprenda la scacchiera
 - La telecamera deve essere posizionata in basso a sinistra rispetto alla scacchiera, mantenendo la prospettiva del bianco.
-- Per utilizzare ChatGPT nella chat integrata, è necessario fornire una chiave API OpenAI, da inserire nel file `keys.env` all'interno della variabile OPENAI_API_KEY
-- Per utilizzare Gemini nella chat integrata, è necessario fornire una chiave API Gemini, da inserire nel file `keys.env` all'interno della variabile GEMINI_API_KEY
+- Per utilizzare ChatGPT nella chat integrata, è necessario fornire una chiave API OpenAI, da inserire nel file `keys.env` all'interno della variabile **OPENAI_API_KEY**
+- Per utilizzare Gemini nella chat integrata, è necessario fornire una chiave API Gemini, da inserire nel file `keys.env` all'interno della variabile **GEMINI_API_KEY**
 
 ## Installazione ed esecuzione dell'applicazione
 1. Clona il repository:
@@ -74,9 +74,9 @@ tar -xzf /datasets/dataset.tar.gz -C /datasets
 ```
 
 ## Training
-Il modello per l'Object Detection dei pezzi è già incluso nel repository con il nome `modello.pt`, ed è stato addestrato ottenendo i seguenti risultati:
+Il modello per l'Object Detection dei pezzi già pronto per essere utilizzato si trova su Hugging Face al seguente link: [https://huggingface.co/acapitani/chesspiece-detection-yolo](https://huggingface.co/acapitani/chesspiece-detection-yolo), ed è stato addestrato ottenendo i seguenti risultati:
 ![Risultati dell'addestramento](assets/training_results.png)
-È comunque possibile eseguire l'addestramento da zero utilizzando il file `train.py` e il dataset disponibile al seguente link:
+È comunque possibile eseguire l'addestramento da zero utilizzando il file `train.py` e il dataset disponibile al seguente link: [https://huggingface.co/datasets/acapitani/chesspiece-detection-yolo](https://huggingface.co/datasets/acapitani/chesspiece-detection-yolo)
 
 ## Demo
 In questo breve video viene illustrato il funzionamento dell'applicazione: [![Guarda il video](assets/chess-assistant-ai.png)](https://youtu.be/WZLR9H4znxg)
