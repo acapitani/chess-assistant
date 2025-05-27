@@ -41,6 +41,7 @@ L'applicazione integra:
 ## Requisiti
 - Telecamera che riprenda la scacchiera
 - La telecamera deve essere posizionata in basso a sinistra rispetto alla scacchiera, mantenendo la prospettiva del bianco.
+- Scaricare il modello utilizzato per fare Object Detection dei pezzi seguendo le [istruzioni](#download-modello)
 - Per utilizzare ChatGPT nella chat integrata, è necessario fornire una chiave API OpenAI, da inserire nel file `keys.env` all'interno della variabile **OPENAI_API_KEY**
 - Per utilizzare Gemini nella chat integrata, è necessario fornire una chiave API Gemini, da inserire nel file `keys.env` all'interno della variabile **GEMINI_API_KEY**
 
